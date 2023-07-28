@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.header-section {
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1a1a1a;
+  height: 100%;
+  width: 100%;
+  opacity: 0.56;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.wrapper {
+  position: relative;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo-header img {
+  height: 35px;
+  width: fit-content;
+}
+
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* justify-content:  */
+}
+
+.navbar > ul > li {
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.navbar .reservation {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 14px 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+
+.navbar .reservation:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-top: 1px solid #f5c61c;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #fff;
+}
+
+.dropdown-content a:hover {
+  color: #fdcf28;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  height: 100vh;
+  align-items: center;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.content-body > .tagline {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.content-body > h1 {
+  font-size: 71px;
+  line-height: 1.5;
+}
+
+.content-body > p {
+  font-size: 16px;
+  margin-left: 220px;
+  margin-right: 220px;
+  line-height: 1.5;
+}
+
+.vertical-line {
+  border-top: 80px solid #fff;
+  width: 1px;
+  margin: 10% 0% 0%;
+}
+
+.scroll-down {
+  margin-top: 20px;
+}
+
+.scroll-down > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.atmosphere {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 104px 0;
+}
+
+.left-container {
+  margin-right: 80px;
+}
+.right-container {
+  margin-left: 80px;
+}
+
+.left-container > .left-content > h2 {
+  font-size: 48px;
+  color: #1a1a1a;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.left-container > .left-content > p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #7a7a7a;
+  margin-bottom: 52px;
+  line-height: 1.6;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.right-container > h5 {
+  font-size: 18px;
+}
+
+.right-container > p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #7a7a7a;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coffee-cups {
+  position: relative;
+  text-align: left;
+  bottom: -80px;
+}
+
+.menu {
+  background-color: #1a1a1a;
+  padding: 104px 0;
+  color: #fff;
+}
+
+.menu .menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-content > .row4,
+.menu-content > .row2,
+.menu-content > .row5 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.row1 {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.row2 *,
+.row5 * {
+  width: 100%;
+  text-align: center;
+}
+
+.row2 span,
+.row5 span {
+  display: flex;
+  border-top: 1px solid #7a7a7a;
+}
+
+.row2 > .col2 {
+  font-size: 48px;
+  margin: 0 24px;
+}
+
+.row3 {
+  margin-top: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.row3 > p {
+  width: 66%;
+  margin: 0 auto 20px;
+}
+
+.row4 {
+  margin-top: 24px;
+  margin-bottom: 64px;
+}
+.left-menu {
+  width: 50%;
+  margin-right: 80px;
+}
+
+.right-menu {
+  width: 50%;
+  margin-left: 80px;
+}
+
+.row4 li {
+  list-style: none;
+}
+
+.row4 li h6 {
+  font-size: 13px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.row4 li p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #7a7a7a;
+}
+
+.row4 li hr {
+  border: 1px dashed #7a7a7a;
+  margin-bottom: 24px;
+}
+
+.view-all {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  border: 2px solid #fff;
+  padding: 14px 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.view-all:hover {
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+.signature-menu {
+    background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/signeture-bg.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signature-menu .signature-content {
+    background-color: #1a1a1a;
+    opacity: .7;
+    color: #fff;
+    padding: 104px 0;
+}
+
+.signature-content h6 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.signature-content h2{
+    font-size: 48px;
+    line-height: 1.25;
+}
+
+.signature-content p {
+    font-size: 16px;
+    width: 50%;
+}
+
+.image-gallery {
+  padding: 100px 80px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.image-gallery img {
+  padding: 0 32px 32px 0;;
+  width: 100%;
+}

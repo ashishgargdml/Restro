@@ -32,6 +32,7 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1240px;
   margin: 0 auto;
@@ -95,7 +96,7 @@
   display: inline-block;
 }
 
-.dropdown-header{
+.dropdown-header {
   display: inline-block;
 }
 
@@ -108,11 +109,11 @@
   border-top: 1px solid #f5c61c;
 }
 
-.dropdown-header-content{
+.dropdown-header-content {
   display: none;
   position: absolute;
   left: 0;
-  width: 99vw;
+  width: 100vw;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-top: 1px solid #f5c61c;
@@ -122,6 +123,7 @@
   list-style: none;
   width: 100%;
   /* position: absolute; */
+  border: 1px solid #7a7a7a;
 }
 
 .dropdown-content a {
@@ -133,6 +135,7 @@
 
 .dropdown-header-content a {
   color: black;
+  height: 16px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -155,7 +158,6 @@
 .dropdown-header-content a:hover {
   color: #fdcf28;
 }
-
 
 .content-body {
   display: flex;
@@ -265,8 +267,10 @@
 }
 
 .coffee {
-  /* position: absolute; */
+  position: relative;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .coffee-cups {
@@ -713,28 +717,63 @@ svg:hover {
   fill: #fdcf28;
 }
 
-@media (max-width: 916px){
-  .header-section {
+@media (max-width: 1108px) {
+  .coffee-cups img {
+    width: 320px;
+  }
+  .coffee-cups {
+    margin-top: -142px;
+    margin-left: 40px;
+  }
+  .bowl-image img {
+    width: 200px;
+  }
+  .bowl-image {
+    margin-top: -198px;
+  }
+}
+
+@media (max-width: 916px) {
+  .content-body {
     height: auto;
   }
-  .content-body{
-    height: auto;
-  }
-  .toggle-header{
+  .toggle-header {
     display: block;
   }
 
   .navbar {
     display: none;
   }
-} 
+  .left-container > .left-content > h2 {
+    font-size: 32px;
+  }
+  .row2 h2 {
+    font-size: 32px;
+  }
+  .signature-content h2 {
+    font-size: 32px;
+  }
+  .content-body > h1 {
+    font-size: 48px;
+  }
+  .testimonial-content h2 {
+    font-size: 32px;
+  }
+}
 
 @media screen and (max-width: 767px) {
-  .header {
-    display: none;
+  .container {
+    padding: 120px 30px 64px;
+  }
+  .coffee-cups img {
+    width: 280px;
+  }
+  .coffee-cups {
+    margin-left: 14px;
   }
   .atmosphere {
     display: block;
+    padding: 64px 30px 160px;
   }
   .atmosphere > .left-container {
     width: 100%;
@@ -748,15 +787,19 @@ svg:hover {
   .menu-content > .row4,
   .menu-content > .row2,
   .menu-content > .row5 {
-    display: block
+    display: block;
   }
 
-  .left-menu , .right-menu {
+  .left-menu,
+  .right-menu {
     width: 100%;
     margin: 0;
   }
 
-  .row2 > .col1, .row2 > .col3, .row5 > .col1, .row5 > .col3{
+  .row2 > .col1,
+  .row2 > .col3,
+  .row5 > .col1,
+  .row5 > .col3 {
     display: none;
   }
 
@@ -764,7 +807,7 @@ svg:hover {
     margin: 0;
   }
 
-  .row3 > p{
+  .row3 > p {
     width: 100%;
   }
 
@@ -773,6 +816,7 @@ svg:hover {
   }
   .team {
     display: block;
+    padding: 64px 30px;
   }
 
   .team > .left-container {
@@ -785,20 +829,39 @@ svg:hover {
     text-align: center;
   }
 
+  .image-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
+
   .testimonial-cards {
     display: block;
   }
 
-  .card1,.card2, .card3 {
-    margin: 0 30px;
+  .card1,
+  .card2,
+  .card3 {
+    margin: 0;
   }
+
+  .bowl-image img {
+    width: 120px;
+  }
+  .bowl-image {
+    margin-top: -108px;
+  }
+
   .main-footer {
     display: block;
   }
-  .about, .location, .quick-links, .opening-hours{
+  .about,
+  .location,
+  .quick-links,
+  .opening-hours {
     width: 100%;
   }
-  .location, .quick-links, .opening-hours {
+  .location,
+  .quick-links,
+  .opening-hours {
     margin-top: 60px;
   }
   .btn a {
@@ -806,7 +869,7 @@ svg:hover {
   }
 
   .footer > .container {
-    padding: 104px 20px;
+    padding: 64px 24px;
   }
 
   .sub-footer-content {
@@ -814,5 +877,43 @@ svg:hover {
     align-items: center;
     row-gap: 10px;
   }
-  
+  .signature-content p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .gallery {
+    padding: 48px 30px 24px;
+  }
+  .testimonial-content {
+    padding: 64px 30px 24px;
+  }
+  .reservation > .container {
+    padding: 64px 30px 120px;
+  }
+  .reservation > .container > h2 {
+    font-size: 32px;
+  }
+  .tele a {
+    font-size: 40px;
+  }
+}
+@media (max-width: 544px) {
+  .row2 h2 {
+    font-size: 24px;
+  }
+  .signature-content h2 {
+    font-size: 24px;
+  }
+  .left-container > .left-content > h2 {
+    font-size: 24px;
+  }
+  .content-body > h1 {
+    font-size: 32px;
+  }
+  .testimonial-content h2 {
+    font-size: 24px;
+  }
+  .image-gallery {
+    display: block;
+  }
 }

@@ -5,6 +5,16 @@
   font-size: 100%;
   font-family: "Raleway", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+  transition: all 10s;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
 .header-section {
   background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/homepage-hero-bg-img.jpg);
   background-position: center center;
@@ -150,10 +160,10 @@
   color: #fdcf28;
 }
 
-.dropdown-header:hover .dropdown-header-content {
+/* .dropdown-header:hover .dropdown-header-content {
   display: block;
   background-color: #fff;
-}
+} */
 
 .dropdown-header-content a:hover {
   color: #fdcf28;
@@ -162,11 +172,11 @@
 .content-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 920px;
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  padding: 50px 0;
   height: 100vh;
   align-items: center;
 }
@@ -734,9 +744,6 @@ svg:hover {
 }
 
 @media (max-width: 916px) {
-  .content-body {
-    height: auto;
-  }
   .toggle-header {
     display: block;
   }

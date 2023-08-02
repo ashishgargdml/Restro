@@ -3,13 +3,171 @@
   <head>
     <title>Deli Restro</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="sidebar.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="main-container">
       <section class="header-section">
-        <div class="background"></div>
+        <div class="background bg-overlay"></div>
         <div class="wrapper">
+          <div class="sidebar" style="display: none" id="mySidebar">
+            <div class="sidebar-top">
+              <h6>Deli Restaurant</h6>
+              <button onclick="w3_close()" class="w3-bar-item w3-large">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                    fill="#6B7280"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="sidebar-content">
+              <p>
+                Use the template as-is or try different colors and fonts from
+                the options below.
+              </p>
+              <div class="sub-head">
+                <p style="font-size: 16px">Try Other Colors</p>
+                <p style="font-size: 12px; color: #7a7a7a">Default</p>
+              </div>
+              <div class="default">
+                <p>DEFAULT COLORS</p>
+                <div class="color-list">
+                  <div
+                    class="color"
+                    style="background-color: rgb(245, 198, 28)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(253, 207, 40)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(26, 26, 26)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(122, 122, 122)"
+                  ></div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="color-list voilet">
+                  <div class="color" style="background-color: #8e43f0"></div>
+                  <div class="color" style="background-color: #6300e2"></div>
+                  <div class="color" style="background-color: #150e1f"></div>
+                  <div class="color" style="background-color: #584d66"></div>
+                </div>
+                <div class="color-list red">
+                  <div class="color" style="background-color: #ef4d48"></div>
+                  <div class="color" style="background-color: #d90700"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #453e3e"></div>
+                </div>
+                <div class="color-list pink">
+                  <div class="color" style="background-color: #ff42b3"></div>
+                  <div class="color" style="background-color: #ff0099"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #554b4e"></div>
+                </div>
+                <div class="color-list">
+                  <div class="color" style="background-color: #ff6a97"></div>
+                  <div class="color" style="background-color: #fa036b"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #645659"></div>
+                </div>
+                <div class="color-list orange">
+                  <div class="color" style="background-color: #ff7a3d"></div>
+                  <div class="color" style="background-color: #ff5100"></div>
+                  <div class="color" style="background-color: #1e1810"></div>
+                  <div class="color" style="background-color: #575250"></div>
+                </div>
+                <div class="color-list def">
+                  <div
+                    class="color"
+                    style="background-color: rgb(245, 198, 28)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(253, 207, 40)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(26, 26, 26)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(122, 122, 122)"
+                  ></div>
+                </div>
+                <div class="color-list cyan">
+                  <div class="color" style="background-color: #30c7b5"></div>
+                  <div class="color" style="background-color: #00ac97"></div>
+                  <div class="color" style="background-color: #14261c"></div>
+                  <div class="color" style="background-color: #4f5655"></div>
+                </div>
+                <div class="color-list green">
+                  <div class="color" style="background-color: #1bae70"></div>
+                  <div class="color" style="background-color: #06752e"></div>
+                  <div class="color" style="background-color: #14261c"></div>
+                  <div class="color" style="background-color: #4e5652"></div>
+                </div>
+                <div class="color-list skyblue">
+                  <div class="color" style="background-color: #2fc1ff"></div>
+                  <div class="color" style="background-color: #08acf2"></div>
+                  <div class="color" style="background-color: #101218"></div>
+                  <div class="color" style="background-color: #4c5253"></div>
+                </div>
+                <div class="color-list blue">
+                  <div class="color" style="background-color: #4175fc"></div>
+                  <div class="color" style="background-color: #084af3"></div>
+                  <div class="color" style="background-color: #101218"></div>
+                  <div class="color" style="background-color: #494b51"></div>
+                </div>
+              </div>
+              <div class="sub-head">
+                <p style="font-size: 16px">Try Other Fonts</p>
+                <p style="font-size: 12px; color: #7a7a7a">Default</p>
+              </div>
+              <div class="default">
+                <span>Railway / <strong>Open Sans</strong></span>
+              </div>
+              <div class="fonts">
+                <div class="monospace">Aa</div>
+                <div class="times-new-roman">Aa</div>
+                <div class="georgia">Aa</div>
+                <div class="helvetica">Aa</div>
+                <div class="geneva">Aa</div>
+                <div class="fantasy">Aa</div>
+                <div class="cursive">Aa</div>
+                <div>Aa</div>
+              </div>
+            </div>
+          </div>
+          <button class="w3-button" onclick="w3_open()">
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 14 14"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 0.25C3.2725 0.25 0.25 3.2725 0.25 7C0.25 10.7275 3.2725 13.75 7 13.75C7.6225 13.75 8.125 13.2475 8.125 12.625C8.125 12.3325 8.0125 12.07 7.8325 11.8675C7.66 11.6725 7.5475 11.41 7.5475 11.125C7.5475 10.5025 8.05 10 8.6725 10H10C12.07 10 13.75 8.32 13.75 6.25C13.75 2.935 10.7275 0.25 7 0.25ZM2.875 7C2.2525 7 1.75 6.4975 1.75 5.875C1.75 5.2525 2.2525 4.75 2.875 4.75C3.4975 4.75 4 5.2525 4 5.875C4 6.4975 3.4975 7 2.875 7ZM5.125 4C4.5025 4 4 3.4975 4 2.875C4 2.2525 4.5025 1.75 5.125 1.75C5.7475 1.75 6.25 2.2525 6.25 2.875C6.25 3.4975 5.7475 4 5.125 4ZM8.875 4C8.2525 4 7.75 3.4975 7.75 2.875C7.75 2.2525 8.2525 1.75 8.875 1.75C9.4975 1.75 10 2.2525 10 2.875C10 3.4975 9.4975 4 8.875 4ZM11.125 7C10.5025 7 10 6.4975 10 5.875C10 5.2525 10.5025 4.75 11.125 4.75C11.7475 4.75 12.25 5.2525 12.25 5.875C12.25 6.4975 11.7475 7 11.125 7Z"
+                  fill="#2563EB"
+                ></path></svg
+              >Customize</span
+            >
+          </button>
           <div class="header">
             <div class="logo-header">
               <a class="logo" href="/">
@@ -158,7 +316,7 @@
           />
         </div>
       </section>
-      <section class="menu">
+      <section class="menu menu-overlay">
         <div class="container">
           <div class="menu-content">
             <div class="row1 mb-20">
@@ -237,7 +395,7 @@
         </div>
       </section>
       <section class="signature-menu">
-        <div class="signature-content">
+        <div class="signature-content bg-overlay">
           <div class="container">
             <h6 class="mb-20">Homemade</h6>
             <h2 class="mb-20">Signature Menu</h2>
@@ -307,18 +465,18 @@
         </div>
       </section>
       <section class="testimonial">
-        <div class="image-overlay"></div>
+        <div class="image-overlay bg-overlay"></div>
         <div class="testimonial-content">
           <h6>TESTIMONIAL</h6>
           <h2>What They Say</h2>
           <div class="testimonial-cards">
-            <div class="card1">
+            <div class="card1 ">
               <div class="testimonial-image">
-                <img
+                <img class="rounded-image"
                   src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/quotes-avatar-woman.png"
                 />
               </div>
-              <div class="card-content">
+              <div class="card-content card-overlay">
                 <p>
                   Rhoncus risus donec neque egestas ultrices ullamcorper cursus
                   aliquam nunc. Cras est sit libero, est in scelerisque donec.
@@ -334,7 +492,7 @@
                   src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/quotes-avatar-woman-2.png"
                 />
               </div>
-              <div class="card-content">
+              <div class="card-content card-overlay">
                 <p>
                   Rhoncus risus donec neque egestas ultrices ullamcorper cursus
                   aliquam nunc. Cras est sit libero, est in scelerisque donec.
@@ -350,7 +508,7 @@
                   src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/quotes-avatar-man.png"
                 />
               </div>
-              <div class="card-content">
+              <div class="card-content card-overlay">
                 <p>
                   Rhoncus risus donec neque egestas ultrices ullamcorper cursus
                   aliquam nunc. Cras est sit libero, est in scelerisque donec.
@@ -571,5 +729,6 @@
       </section>
     </div>
     <script src="index.js"></script>
+    <script src="sidebar.js"></script>
   </body>
 </html>

@@ -5,12 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deli Restro - Menu</title>
     <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="sidebar.css" />
   </head>
   <body>
     <div class="menu-main-container">
       <section class="header-section">
-        <div class="background"></div>
+        <div class="background bg-overlay"></div>
         <div class="wrapper">
+          <div class="sidebar" style="display: none" id="mySidebar">
+            <div class="sidebar-top">
+              <h6>Deli Restaurant</h6>
+              <button onclick="w3_close()" class="w3-bar-item w3-large">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                    fill="#6B7280"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="sidebar-content">
+              <p>
+                Use the template as-is or try different colors and fonts from
+                the options below.
+              </p>
+              <div class="sub-head">
+                <p style="font-size: 16px">Try Other Colors</p>
+                <p style="font-size: 12px; color: #7a7a7a">Default</p>
+              </div>
+              <div class="default">
+                <p>DEFAULT COLORS</p>
+                <div class="color-list">
+                  <div
+                    class="color"
+                    style="background-color: rgb(245, 198, 28)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(253, 207, 40)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(26, 26, 26)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(122, 122, 122)"
+                  ></div>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="color-list voilet">
+                  <div class="color" style="background-color: #8e43f0"></div>
+                  <div class="color" style="background-color: #6300e2"></div>
+                  <div class="color" style="background-color: #150e1f"></div>
+                  <div class="color" style="background-color: #584d66"></div>
+                </div>
+                <div class="color-list red">
+                  <div class="color" style="background-color: #ef4d48"></div>
+                  <div class="color" style="background-color: #d90700"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #453e3e"></div>
+                </div>
+                <div class="color-list pink">
+                  <div class="color" style="background-color: #ff42b3"></div>
+                  <div class="color" style="background-color: #ff0099"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #554b4e"></div>
+                </div>
+                <div class="color-list">
+                  <div class="color" style="background-color: #ff6a97"></div>
+                  <div class="color" style="background-color: #fa036b"></div>
+                  <div class="color" style="background-color: #2b161b"></div>
+                  <div class="color" style="background-color: #645659"></div>
+                </div>
+                <div class="color-list orange">
+                  <div class="color" style="background-color: #ff7a3d"></div>
+                  <div class="color" style="background-color: #ff5100"></div>
+                  <div class="color" style="background-color: #1e1810"></div>
+                  <div class="color" style="background-color: #575250"></div>
+                </div>
+                <div class="color-list def">
+                  <div
+                    class="color"
+                    style="background-color: rgb(245, 198, 28)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(253, 207, 40)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(26, 26, 26)"
+                  ></div>
+                  <div
+                    class="color"
+                    style="background-color: rgb(122, 122, 122)"
+                  ></div>
+                </div>
+                <div class="color-list cyan">
+                  <div class="color" style="background-color: #30c7b5"></div>
+                  <div class="color" style="background-color: #00ac97"></div>
+                  <div class="color" style="background-color: #14261c"></div>
+                  <div class="color" style="background-color: #4f5655"></div>
+                </div>
+                <div class="color-list green">
+                  <div class="color" style="background-color: #1bae70"></div>
+                  <div class="color" style="background-color: #06752e"></div>
+                  <div class="color" style="background-color: #14261c"></div>
+                  <div class="color" style="background-color: #4e5652"></div>
+                </div>
+                <div class="color-list skyblue">
+                  <div class="color" style="background-color: #2fc1ff"></div>
+                  <div class="color" style="background-color: #08acf2"></div>
+                  <div class="color" style="background-color: #101218"></div>
+                  <div class="color" style="background-color: #4c5253"></div>
+                </div>
+                <div class="color-list blue">
+                  <div class="color" style="background-color: #4175fc"></div>
+                  <div class="color" style="background-color: #084af3"></div>
+                  <div class="color" style="background-color: #101218"></div>
+                  <div class="color" style="background-color: #494b51"></div>
+                </div>
+              </div>
+              <div class="sub-head">
+                <p style="font-size: 16px">Try Other Fonts</p>
+                <p style="font-size: 12px; color: #7a7a7a">Default</p>
+              </div>
+              <div class="default">
+                <span>Railway / <strong>Open Sans</strong></span>
+              </div>
+              <div class="fonts">
+                <div class="monospace">Aa</div>
+                <div class="times-new-roman">Aa</div>
+                <div class="georgia">Aa</div>
+                <div class="helvetica">Aa</div>
+                <div class="geneva">Aa</div>
+                <div class="fantasy">Aa</div>
+                <div class="cursive">Aa</div>
+                <div>Aa</div>
+              </div>
+            </div>
+          </div>
+          <button class="w3-button" onclick="w3_open()">
+            <span>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 14 14"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 0.25C3.2725 0.25 0.25 3.2725 0.25 7C0.25 10.7275 3.2725 13.75 7 13.75C7.6225 13.75 8.125 13.2475 8.125 12.625C8.125 12.3325 8.0125 12.07 7.8325 11.8675C7.66 11.6725 7.5475 11.41 7.5475 11.125C7.5475 10.5025 8.05 10 8.6725 10H10C12.07 10 13.75 8.32 13.75 6.25C13.75 2.935 10.7275 0.25 7 0.25ZM2.875 7C2.2525 7 1.75 6.4975 1.75 5.875C1.75 5.2525 2.2525 4.75 2.875 4.75C3.4975 4.75 4 5.2525 4 5.875C4 6.4975 3.4975 7 2.875 7ZM5.125 4C4.5025 4 4 3.4975 4 2.875C4 2.2525 4.5025 1.75 5.125 1.75C5.7475 1.75 6.25 2.2525 6.25 2.875C6.25 3.4975 5.7475 4 5.125 4ZM8.875 4C8.2525 4 7.75 3.4975 7.75 2.875C7.75 2.2525 8.2525 1.75 8.875 1.75C9.4975 1.75 10 2.2525 10 2.875C10 3.4975 9.4975 4 8.875 4ZM11.125 7C10.5025 7 10 6.4975 10 5.875C10 5.2525 10.5025 4.75 11.125 4.75C11.7475 4.75 12.25 5.2525 12.25 5.875C12.25 6.4975 11.7475 7 11.125 7Z"
+                  fill="#2563EB"
+                ></path></svg
+              >Customize</span
+            >
+          </button>
           <div class="header">
             <div class="logo-header">
               <a class="logo" href="/">
@@ -113,10 +271,12 @@
             nunc cum massa.
           </p>
           <div class="signature">
-            <img
-              src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/plate-of-cookie-with-strawberry.png"
-              alt="signature"
-            />
+            <div class="sign-img">
+              <img
+                src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/plate-of-cookie-with-strawberry.png"
+                alt="signature"
+              />
+            </div>
             <div class="sign-content">
               <h6 class="mb-20">SIGNATURE</h6>
               <h3 class="mb-20">Strawberry And Grapes Cake</h3>
@@ -202,7 +362,7 @@
           </div>
         </div>
       </section>
-      <section class="appetizer">
+      <section class="main-course">
         <div class="appetizer-content container">
           <h2 class="mb-20">Main Courses</h2>
           <p class="mb-20">
@@ -212,10 +372,12 @@
             nunc cum massa.
           </p>
           <div class="signature">
-            <img
-              src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/food-on-white-plate.png"
-              alt="signature"
-            />
+            <div class="sign-img">
+              <img
+                src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/food-on-white-plate.png"
+                alt="signature"
+              />
+            </div>
             <div class="sign-content">
               <h6 class="mb-20">SIGNATURE</h6>
               <h3 class="mb-20">NYUS Toasted Bread With Grape</h3>
@@ -301,9 +463,9 @@
           </div>
         </div>
       </section>
-      <section class="appetizer">
+      <section class="deserts">
         <div class="appetizer-content container">
-          <h2 class="mb-20">Appetizer</h2>
+          <h2 class="mb-20">Dessert</h2>
           <p class="mb-20">
             Lorem sollicitudin quis amet, pellentesque et proin. Venenatis
             iaculis nibh neque sit ullamcorper ac dictumst. Amet dignissim nunc
@@ -311,16 +473,18 @@
             nunc cum massa.
           </p>
           <div class="signature">
-            <img
-              src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/plate-of-cookie-with-strawberry.png"
-              alt="signature"
-            />
+            <div class="sign-img">
+              <img
+                src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/plate-of-cookie-with-strawberry.png"
+                alt="signature"
+              />
+            </div>
             <div class="sign-content">
               <h6 class="mb-20">SIGNATURE</h6>
-              <h3 class="mb-20">Strawberry And Grapes Cake</h3>
+              <h3 class="mb-20">Cheesy Fruits Cake</h3>
               <p>
                 In lorem ornare sollicitudin aliquet nunc cum massa.
-                <br /><strong>9.00</strong>
+                <br /><strong>10.00</strong>
               </p>
             </div>
           </div>
@@ -400,6 +564,209 @@
           </div>
         </div>
       </section>
+      <section class="reservation">
+        <div class="image-overlay bg-overlay"></div>
+        <div class="container">
+          <h2 class="mb-20">Reservation</h2>
+          <p class="mb-20">
+            Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit.
+            Bibendum tincidunt a scelerisque consectetur ultrices elementum
+            pulvinar non.
+          </p>
+          <div class="reservation-btn">
+            <a href="/">BOOK A TABLE NOW</a>
+          </div>
+          <h6>TELEPHONE RESERVATIONS</h6>
+          <div class="tele">
+            <a href="/">12 34 56 7890</a>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="main-footer container">
+          <div class="about">
+            <img
+              class="logo"
+              src="https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/nyus-deli-restaurant-logo.svg"
+              alt="logo"
+            />
+            <p>
+              Egestas sit in lobortis duis viverra enim eros ornare. Et
+              tincidunt pretium curabitur vehicula turpis adipiscing donec. Et
+              ut morbi magna quis purus aliquet.
+            </p>
+            <div class="social-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 21.339844 2.007813 C 18.542969 2.113281 12.75 3.855469 11.488281 5.15625 C 11.007813 5.613281 10.886719 6.300781 11.007813 6.757813 C 11.246094 7.214844 20.976563 21.980469 20.976563 21.980469 C 22.417969 24.269531 23.167969 24.015625 23.53125 23.902344 C 23.890625 23.785156 25.089844 23.355469 24.851563 20.609375 C 24.730469 17.515625 23.769531 3.898438 23.652344 3.210938 C 23.410156 2.640625 23.050781 2.179688 22.328125 2.0625 C 22.074219 2.007813 21.738281 1.992188 21.339844 2.007813 Z M 36.640625 16 C 36.359375 16.011719 36.085938 16.097656 35.847656 16.269531 C 35.097656 17.007813 35.363281 16.484375 31.046875 22.203125 L 29.003906 24.832031 C 28.523438 25.402344 28.636719 26.359375 29.117188 27.046875 C 29.597656 27.734375 30.25 28.097656 31.164063 27.921875 C 31.523438 27.804688 32.246094 27.691406 33.5625 27.347656 C 41.84375 25.519531 41.917969 25.53125 42.28125 25.304688 C 42.757813 24.960938 43 24.503906 43 23.816406 L 43 23.703125 C 42.757813 21.875 39.207031 16.957031 37.527344 16.15625 C 37.226563 16.042969 36.925781 15.984375 36.640625 16 Z M 9.390625 23.96875 C 8.910156 23.96875 8.308594 24.199219 7.945313 24.769531 C 7.105469 25.917969 6.847656 29.570313 7.085938 32.089844 C 7.207031 32.890625 7.328125 33.542969 7.566406 34 C 7.925781 34.574219 8.40625 34.917969 9.007813 34.917969 C 9.367188 34.917969 9.09375 34.8125 16.300781 32.753906 L 19.546875 31.722656 C 20.386719 31.492188 20.972656 30.917969 20.972656 30.003906 C 20.972656 29.089844 20.527344 28.332031 19.6875 27.988281 L 17.40625 27.074219 C 9.597656 23.980469 9.75 23.96875 9.390625 23.96875 Z M 31.09375 32.023438 C 30.46875 31.976563 29.882813 32.132813 29.4375 32.609375 C 29.050781 33.03125 28.757813 34.230469 29.238281 34.917969 L 30.558594 36.859375 C 34.882813 43.5 34.90625 43.839844 35.265625 44.070313 C 35.746094 44.527344 36.347656 44.53125 36.949219 44.300781 C 38.871094 43.613281 42.628906 39.0625 42.867188 37.230469 C 42.988281 36.660156 42.75 36.085938 42.265625 35.515625 C 42.027344 35.285156 41.527344 35.203125 34.796875 33.113281 L 31.71875 32.136719 C 31.511719 32.078125 31.300781 32.039063 31.09375 32.023438 Z M 23.0625 34.03125 C 22.417969 33.960938 21.796875 34.089844 21.4375 34.605469 L 19.875 36.433594 C 14.46875 42.5 14.230469 42.84375 14.109375 43.1875 C 13.988281 43.417969 13.988281 43.644531 13.988281 43.875 C 14.109375 44.214844 14.230469 44.445313 14.46875 44.789063 C 15.789063 46.164063 21.625 48.308594 23.546875 47.964844 C 24.148438 47.851563 24.628906 47.503906 24.867188 46.933594 C 24.988281 46.589844 24.984375 46.363281 24.984375 39.152344 L 24.984375 35.832031 C 24.988281 34.828125 24.546875 34.496094 23.703125 34.152344 C 23.496094 34.09375 23.277344 34.050781 23.0625 34.03125 Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="location">
+            <h3>Our Location</h3>
+            <p>
+              3 E 19th St, 123 Fifth Avenue,<br />NY 10160, New York, USA<br />1
+              234 567 890
+            </p>
+          </div>
+          <div class="quick-links">
+            <h3>Quick Link</h3>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Menu</li>
+              <li>Testimonial</li>
+              <li>Contact us</li>
+            </ul>
+          </div>
+          <div class="opening-hours">
+            <h3>Opening Hours</h3>
+            <div class="days">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0,0,256,256"
+                style="fill: #000000"
+              >
+                <g
+                  fill="#fff"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(10.66667,10.66667)">
+                    <path
+                      d="M12,2c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c5.511,0 10,-4.489 10,-10c0,-5.511 -4.489,-10 -10,-10zM12,4c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8zM11,6v6.41406l4.29297,4.29297l1.41406,-1.41406l-3.70703,-3.70703v-5.58594z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <div>
+                <p>Sunday to Wednesday</p>
+                <p>9AM - 10:30PM</p>
+              </div>
+            </div>
+            <div class="days">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="24"
+                height="24"
+                viewBox="0,0,256,256"
+                style="fill: #000000"
+              >
+                <g
+                  fill="#fff"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(10.66667,10.66667)">
+                    <path
+                      d="M12,2c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c5.511,0 10,-4.489 10,-10c0,-5.511 -4.489,-10 -10,-10zM12,4c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8zM11,6v6.41406l4.29297,4.29297l1.41406,-1.41406l-3.70703,-3.70703v-5.58594z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <div>
+                <p>Thursday, Friday, Saturday</p>
+                <p>9AM - 12:30AM</p>
+              </div>
+            </div>
+            <div class="btn">
+              <a href="/">RESERVATION</a>
+            </div>
+          </div>
+        </div>
+        <div class="sub-footer">
+          <div class="sub-footer-content">
+            <span>Copyright © 2023 Deli Restaurant</span>
+            <span>Powered By Deli Restaurant</span>
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="sidebar.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

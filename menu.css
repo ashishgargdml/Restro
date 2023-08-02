@@ -11,7 +11,7 @@ html {
   transition: all 10s;
 }
 
-.main-container {
+.menu-main-container {
   overflow: hidden;
 }
 
@@ -28,6 +28,7 @@ svg:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* height: 52vh; */
   position: relative;
 }
 
@@ -93,6 +94,8 @@ svg:hover {
   letter-spacing: 2px;
   font-weight: 600;
   transition: all 0.2s linear;
+
+  background: transparent;
 }
 
 .navbar .reservation:hover {
@@ -246,7 +249,22 @@ svg:hover {
 }
 
 .appetizer {
+  background-color: #e9ecef;
   background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/appetizer-menu-header.png);
+  background-repeat: no-repeat;
+  padding: 104px 0;
+}
+
+.main-course {
+  background-color: #e9ecef;
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/main-courses-menu-header-img.png);
+  background-repeat: no-repeat;
+  padding: 104px 0;
+}
+
+.deserts {
+  background-color: #e9ecef;
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/07/dessert-menu-header-img.png);
   background-repeat: no-repeat;
   padding: 104px 0;
 }
@@ -269,6 +287,7 @@ svg:hover {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #7a7a7a;
+  line-height: 1.6;
 }
 
 .signature {
@@ -276,13 +295,23 @@ svg:hover {
   margin: 0% 10% 0% 36%;
   margin-top: 16px;
   color: #7a7a7a;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  color: #1a1a1a;
 }
-strong{
-    color: #1a1a1a;
+strong {
+  color: #1a1a1a;
 }
 
 .signature img {
   width: 120px;
+  margin-right: 10px;
+}
+
+.signature h3 {
+  font-size: 24px;
+  color: #1a1a1a;
 }
 
 .appetizer-menu {
@@ -328,4 +357,307 @@ strong{
 .appetizer-menu li hr {
   border: 1px dashed #7a7a7a;
   margin-bottom: 24px;
+}
+
+.reservation {
+  background-image: url(https://websitedemos.net/deli-restaurant-02/wp-content/uploads/sites/637/2020/08/inside-restaurant-topview.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 104px 0;
+}
+
+.reservation > .container {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.reservation > .container > h2 {
+  font-size: 48px;
+  color: #fff;
+}
+
+.reservation > .container > p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reservation-btn a {
+  color: #fff;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 10px 26px;
+  border: 2px solid #fff;
+  margin-bottom: 50px;
+}
+
+.reservation-btn {
+  margin-bottom: 50px;
+}
+
+.reservation-btn a:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.reservation > .container h6 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.tele a {
+  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 800;
+}
+
+.image-overlay {
+  position: absolute;
+  background-color: #1a1a1a;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.64;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.main-footer {
+  display: flex;
+  padding: 104px 0;
+}
+
+.about,
+.location,
+.quick-links,
+.opening-hours {
+  width: 24%;
+}
+.about {
+  margin-right: 56px;
+}
+
+.about img {
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.about p,
+.location p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.location h3,
+.quick-links h3,
+.opening-hours h3 {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.quick-links li {
+  list-style: none;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+}
+
+.days {
+  display: flex;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.days > svg {
+  margin-top: 5px;
+  margin-right: 8px;
+  background: #fdcf28;
+  border-radius: 10px;
+}
+
+.days p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+}
+
+.btn a {
+  border: 2px solid #fff;
+  padding: 14px 24px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.btn a:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.sub-footer {
+  border-top: 1px solid #7a7a7a;
+}
+
+.sub-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .appetizer,
+  .deserts,
+  .main-course {
+    background-size: 300px auto;
+    padding: 80px 40px;
+  }
+
+  .signature {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .left-menu {
+    margin-right: 24px;
+  }
+  .middle-menu {
+    margin: 0 12px;
+  }
+  .right-menu {
+    margin-left: 24px;
+  }
+  .main-footer {
+    padding: 80px 40px;
+  }
+}
+@media (max-width: 916px) {
+  .toggle-header {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .signature-content h2 {
+    font-size: 32px;
+  }
+  .appetizer-content > h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .appetizer-menu {
+    display: block;
+  }
+
+  .left-menu,
+  .middle-menu,
+  .right-menu {
+    width: 100%;
+    margin: 0;
+  }
+  .appetizer-content > p {
+    margin-right: 0;
+  }
+  .signature{
+    display: block;
+  }
+  .sign-img {
+    text-align: center;
+  }
+  .main-footer {
+    display: block;
+  }
+  .about,
+  .location,
+  .quick-links,
+  .opening-hours {
+    width: 100%;
+  }
+  .location,
+  .quick-links,
+  .opening-hours {
+    margin-top: 60px;
+  }
+  .btn a {
+    padding: 8px 24px;
+  }
+
+  .footer {
+    padding: 64px 24px;
+  }
+
+  .sub-footer-content {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .signature-content p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .reservation > .container {
+    padding: 64px 30px 120px;
+  }
+  .reservation > .container > h2 {
+    font-size: 32px;
+  }
+  .tele a {
+    font-size: 40px;
+  }
+}
+@media (max-width: 544px) {
+  .appetizer,
+  .deserts,
+  .main-course {
+    padding: 380px 30px 64px;
+  }
+
+  .appetizer-content > p {
+    margin-left: 0;
+  }
+  .appetizer-content > h2{
+    font-size: 24px;
+    margin-left: 0;
+  }
+  .signature-content h2 {
+    font-size: 24px;
+  }
+  .left-container > .left-content > h2 {
+    font-size: 24px;
+  }
+  .content-body > h1 {
+    font-size: 32px;
+  }
 }

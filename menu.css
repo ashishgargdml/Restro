@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -534,6 +536,10 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
+.social-links > svg {
+    height: 22px;
+}
+
 @media (max-width: 1024px) {
   .appetizer,
   .deserts,
@@ -590,7 +596,7 @@ a {
   .appetizer-content > p {
     margin-right: 0;
   }
-  .signature{
+  .signature {
     display: block;
   }
   .sign-img {
@@ -647,7 +653,7 @@ a {
   .appetizer-content > p {
     margin-left: 0;
   }
-  .appetizer-content > h2{
+  .appetizer-content > h2 {
     font-size: 24px;
     margin-left: 0;
   }
